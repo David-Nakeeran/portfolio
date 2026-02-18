@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer>
+    <footer className="text-center py-16">
       <a
         href="https://github.com/David-Nakeeran"
         target="_blank"
