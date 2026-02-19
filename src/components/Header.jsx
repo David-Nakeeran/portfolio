@@ -4,7 +4,7 @@ export default function Header() {
       <div>
         <h1 className="font-bold text-5xl mb-3">David Nakeeran</h1>
         <h2 className="text-[#9ca3af] mb-4 text-base lg:text-lg">
-          Web Developer
+          Full Stack Developer
         </h2>
         <p className="text-[#9ca3af] mb-8 max-w-xl mx-auto text-base lg:text-lg">
           Building accessible, user-focused web experiences.
