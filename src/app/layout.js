@@ -16,11 +16,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} antialiased min-h-dvh`}>
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-start lg:min-h-dvh w-full gap-8 px-6">
-          <Header />
-          {children}
-        </div>
+      <body className={`${inter.variable} antialiased flex flex-col min-h-dvh`}>
+        <Header />
+        {children}
         <Footer />
       </body>
     </html>

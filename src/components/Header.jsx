@@ -1,22 +1,45 @@
 export default function Header() {
   return (
-    <header className="lg:flex lg:flex-col lg:sticky lg:top-0 pt-24 mb-16 lg:items-start flex-1 max-w-2xl px-6">
+    <header className="pt-24 pb-16 text-center">
       <div>
         <h1 className="font-bold text-5xl mb-3">David Nakeeran</h1>
-        <h2 className="text-xl text-[#9ca3af] mb-3">Web Developer</h2>
-        <p className="text-[#9ca3af] mb-8">
+        <h2 className="text-[#9ca3af] mb-4 text-base lg:text-lg">
+          Web Developer
+        </h2>
+        <p className="text-[#9ca3af] mb-8 max-w-xl mx-auto text-base lg:text-lg">
           Building accessible, user-focused web experiences.
         </p>
-        <nav className="">
-          <ul>
+        <nav>
+          <ul className="flex flex-wrap justify-center gap-6 text-sm font-medium lg:text-lg">
             <li className="mb-2">
-              <a href="#about">About</a>
+              <a
+                href="#about"
+                className="relative inline-block  after:block after:h-0.5 after:w-0 after:bg-amber-400/80 after:absolute 
+               after:left-0 after:bottom-0 after:transition-all after:duration-300
+               hover:after:w-full after:ease-out"
+              >
+                About
+              </a>
             </li>
             <li className="mb-2">
-              <a href="#stack">Technologies I work with</a>
+              <a
+                href="#stack"
+                className="relative inline-block  after:block after:h-0.5 after:w-0 after:bg-amber-400/80 after:absolute 
+               after:left-0 after:bottom-0 after:transition-all after:duration-300
+               hover:after:w-full after:ease-out"
+              >
+                Technologies I work with
+              </a>
             </li>
             <li className="mb-2">
-              <a href="#projects">Projects</a>
+              <a
+                href="#projects"
+                className="relative inline-block  after:block after:h-0.5 after:w-0 after:bg-amber-400/80 after:absolute 
+               after:left-0 after:bottom-0 after:transition-all after:duration-300
+               hover:after:w-full after:ease-out"
+              >
+                Projects
+              </a>
             </li>
           </ul>
         </nav>

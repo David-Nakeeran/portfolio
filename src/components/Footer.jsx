@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="text-center py-16">
+    <footer className="text-center py-16 text-sm text-[#9ca3af] lg:text-lg">
       <a
         href="https://github.com/David-Nakeeran"
         target="_blank"
