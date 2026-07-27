@@ -1,7 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -9,18 +7,16 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "David Nakeeran",
+  title: "David Nakeeran | Junior Fullstack Developer",
   description:
-    "Full Stack Web Developer, specialising in modern JavaScript and PHP applications with a focus on accessibility and performance.",
+    "Portfolio of David Nakeeran, a junior fullstack developer building applications with Laravel, Next.js, Node.js and modern web technologies.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} antialiased flex flex-col min-h-dvh`}>
-        <Header />
+      <body className={`${inter.variable} antialiased min-h-dvh`}>
         {children}
-        <Footer />
       </body>
     </html>
   );
