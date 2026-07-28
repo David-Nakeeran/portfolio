@@ -9,15 +9,13 @@ export default function Hero() {
             Junior fullstack developer
           </p>
           <h1 className="max-w-3xl text-display text-primary">
-            I build fullstack web applications and enjoy learning new
-            technologies.
+            I love building software and learning how things work.
           </h1>
           <p className="mt-6 max-w-reading text-lead text-muted">
-            I&apos;m a junior developer from the UK with experience building
-            projects using Laravel, Next.js and Node.js. I like creating
-            software that solves real problems, and lately I&apos;ve been
-            exploring AI agents to better understand how modern AI applications
-            work.
+            I&apos;m a junior developer from the UK who enjoys building software
+            with Laravel, Next.js, Node.js and C#. Most of what I&apos;ve
+            learned has come from building projects, solving problems and
+            improving them over time.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button href="#projects">View my projects</Button>
@@ -41,16 +39,12 @@ export default function Hero() {
           </div>
           <div className="space-y-4 p-6 font-mono text-sm leading-7">
             <p className="text-subtle">
-              <span className="text-accent">$</span> npm run devmate
+              <span className="text-accent">$</span> npm start
             </p>
-            <p className="text-secondary">What would you like me to do?</p>
             <p className="text-primary">
               Explain the authentication code in this workspace.
             </p>
             <div className="space-y-2 border-l border-border pl-4">
-              <p className="text-info">
-                Thinking: I need to inspect the project files.
-              </p>
               <p className="text-warning">Tool: listFiles</p>
               <p className="text-warning">Tool: readFile</p>
               <p className="text-success">

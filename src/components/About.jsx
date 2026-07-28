@@ -11,11 +11,11 @@ export default function About() {
           />
           <div className="max-w-reading space-y-6 text-base leading-8 text-muted">
             <p>
-              I started building websites because I enjoy taking an idea and
-              turning it into something that works. Since then, I have built
-              fullstack projects using Laravel, Next.js and Node.js, including
-              dashboards, role based applications and tools that interact with
-              APIs.
+              I started building software applications because I enjoy taking an
+              idea and turning it into something that works. Since then, I have
+              built fullstack projects using Laravel, Next.js and Node.js,
+              including dashboards, role based applications and tools that
+              interact with APIs.
             </p>
             <p>
               Most of what I know has come from building projects, getting
