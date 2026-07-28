@@ -89,6 +89,13 @@ export const projects = [
     image: "/projects/job-tracker/dashboard.png",
     githubUrl: "https://github.com/David-Nakeeran/job-tracker",
     liveUrl: "https://job-tracker-ten-xi.vercel.app/",
+    demoAccounts: [
+      {
+        role: "Demo user",
+        email: "testuser@test.com",
+        password: "Madeupuser123@",
+      },
+    ],
     highlights: [
       "Authentication with Clerk",
       "CRUD application management",
