@@ -51,6 +51,25 @@ export default function FeaturedProject({ project }) {
                 ))}
               </ul>
             </div>
+            {project.demoAccounts && (
+              <div className="mt-8 rounded-card border border-border bg-surface p-6">
+                <h3 className="text-lg font-semibold text-primary">
+                  Demo Accounts
+                </h3>
+                <p className="mt-2 text-sm text-muted">
+                  Explore the application using one of the demo accounts below.
+                </p>
+                <div className="mt-4 space-y-4">
+                  {project.demoAccounts.map((account) => (
+                    <div key={account.role}>
+                      <p className="font-medium text-primary">{account.role}</p>
+                      <p className="text-sm text-muted">{account.email}</p>
+                      <p className="text-sm text-muted">{account.password}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
             <div className="mt-8 flex flex-wrap gap-4">
               <Button href={project.githubUrl} variant="primary" external>
                 View code

@@ -44,6 +44,23 @@ export const projects = [
     image: "/projects/thoughtnest/dashboard.png",
     githubUrl: "https://github.com/David-Nakeeran/thoughtnest",
     liveUrl: "https://thoughtnest-production-zbelug.laravel.cloud",
+    demoAccounts: [
+      {
+        role: "Admin",
+        email: "admin@thoughtnest.demo",
+        password: "Password@123",
+      },
+      {
+        role: "Therapist",
+        email: "therapist@thoughtnest.demo",
+        password: "Password@123",
+      },
+      {
+        role: "Patient",
+        email: "patient@thoughtnest.demo",
+        password: "Password@123",
+      },
+    ],
     highlights: [
       "Role based access control",
       "Laravel policies and middleware",
