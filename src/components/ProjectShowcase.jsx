@@ -2,6 +2,7 @@ import Image from "next/image";
 import Badge from "./Badge";
 import Button from "./Button";
 import SectionHeading from "./SectionHeading";
+import ScreenshotLightbox from "./ScreenshotLightbox";
 
 export default function ProjectShowcase({ project, imagePosition = "left" }) {
   const imageOrder = imagePosition === "right" ? "lg:order-2" : "lg:order-1";
@@ -15,12 +16,10 @@ export default function ProjectShowcase({ project, imagePosition = "left" }) {
           <div
             className={`overflow-hidden rounded-image border border-border bg-surface shadow-panel ${imageOrder}`}
           >
-            <Image
+            <ScreenshotLightbox
               src={project.image}
-              alt={`${project.title} project screenshot`}
-              width={1600}
-              height={900}
-              className="h-auto w-full"
+              alt={`${project.title} screenshot`}
+              className="w-full rounded-xl object-cover"
             />
           </div>
           <div className={contentOrder}>
@@ -59,7 +58,6 @@ export default function ProjectShowcase({ project, imagePosition = "left" }) {
                 <h3 className="text-lg font-semibold text-primary">
                   Demo accounts
                 </h3>
-
                 <p className="mt-2 text-sm text-muted">
                   Use one of these accounts to explore the different roles.
                 </p>
@@ -71,7 +69,6 @@ export default function ProjectShowcase({ project, imagePosition = "left" }) {
                         <span className="font-medium">Email:</span>{" "}
                         {account.email}
                       </p>
-
                       <p className="text-sm text-muted">
                         <span className="font-medium">Password:</span>{" "}
                         {account.password}

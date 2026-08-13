@@ -1,7 +1,7 @@
 import Badge from "./Badge";
 import Button from "./Button";
 import SectionHeading from "./SectionHeading";
-import Image from "next/image";
+import ScreenshotLightbox from "./ScreenshotLightbox";
 
 export default function FeaturedProject({ project }) {
   return (
@@ -14,13 +14,10 @@ export default function FeaturedProject({ project }) {
         />
         <div className="mt-12 grid items-start gap-10 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="overflow-hidden rounded-image border border-border bg-terminal shadow-terminal">
-            <Image
+            <ScreenshotLightbox
               src={project.image}
               alt={`${project.title} screenshot`}
-              width={1600}
-              height={900}
-              className="h-auto w-full"
-              priority
+              className="w-full rounded-xl object-cover"
             />
           </div>
           <div>

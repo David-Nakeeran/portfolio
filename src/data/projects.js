@@ -40,6 +40,7 @@ export const projects = [
       "Tailwind CSS",
       "Chart.js",
       "Pest",
+      "GitHub Actions",
     ],
     image: "/projects/thoughtnest/dashboard.png",
     githubUrl: "https://github.com/David-Nakeeran/thoughtnest",
@@ -65,7 +66,7 @@ export const projects = [
       "Role based access control",
       "Laravel policies and middleware",
       "Mood tracking and charts",
-      "Therapist and administrator workflows",
+      "Database notifications for patients and therapists",
     ],
   },
 
